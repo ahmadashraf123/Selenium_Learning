@@ -8,7 +8,7 @@ from selenium.webdriver.support.select import Select
 
 # Set Chrome options (important for Jenkins/CI)
 options = Options()
-# options.add_argument("--headless=new")       # Run headless (no browser window)
+options.add_argument("--headless=new")       # Run headless (no browser window)
 options.add_argument("--no-sandbox")         # Prevents sandbox errors in Jenkins
 options.add_argument("--disable-dev-shm-usage")  # Avoids memory issues
 options.add_argument("--disable-gpu")        # Optional: stabilize headless mode
