@@ -13,6 +13,10 @@ options.add_argument("--no-sandbox")         # Prevents sandbox errors in Jenkin
 options.add_argument("--disable-dev-shm-usage")  # Avoids memory issues
 options.add_argument("--disable-gpu")        # Optional: stabilize headless mode
 
+
+from webdriver_manager.chrome import ChromeDriverManager
+print("ChromeDriver path:", ChromeDriverManager().install())
+
 # Use webdriver-manager to get correct driver
 driver = webdriver.Chrome(
     service=Service(ChromeDriverManager().install()),
