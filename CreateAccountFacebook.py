@@ -8,7 +8,7 @@ from selenium.webdriver.support.select import Select
 
 # Set Chrome options (important for Jenkins/CI)
 options = Options()
-# options.add_argument("--headless=new")       # Run headless (no browser window)
+options.add_argument("--headless=new")       # Run headless (no browser window)
 options.add_argument("--no-sandbox")         # Prevents sandbox errors in Jenkins
 options.add_argument("--disable-dev-shm-usage")  # Avoids memory issues
 options.add_argument("--disable-gpu")        # Optional: stabilize headless mode
@@ -17,7 +17,10 @@ options.add_argument("--disable-gpu")        # Optional: stabilize headless mode
 from webdriver_manager.chrome import ChromeDriverManager
 print("ChromeDriver path:", ChromeDriverManager().install())
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 49062474d1834b9e639da74f4fdaa13bad21a31e
 # Use webdriver-manager to get correct driver
 driver = webdriver.Chrome(
     service=Service(ChromeDriverManager().install()),
