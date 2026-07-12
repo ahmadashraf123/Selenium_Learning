@@ -1,0 +1,27 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Drivers (resolved at runtime by webdriver-manager)
+*.exe
+chromedriver*
+geckodriver*
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated output
+*.png
+Screenshots/
+Logs/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
